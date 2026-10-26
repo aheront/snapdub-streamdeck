@@ -1,0 +1,66 @@
+{
+	"Name": "SnapDub",
+	"Version": "1.0.0.0",
+	"Author": "SnapDub",
+	"Actions": [
+		{
+			"Name": "Make clips",
+			"UUID": "ai.snapdub.streamdeck.clip",
+			"Icon": "imgs/actions/clip/icon",
+			"Tooltip": "Turns the copied stream or video link into short clips with captions.",
+			"PropertyInspectorPath": "ui/clip-link.html",
+			"Controllers": [
+				"Keypad"
+			],
+			"States": [
+				{
+					"Image": "imgs/actions/clip/key",
+					"TitleAlignment": "bottom",
+					"FontSize": 12
+				}
+			]
+		},
+		{
+			"Name": "Credits",
+			"UUID": "ai.snapdub.streamdeck.credits",
+			"Icon": "imgs/actions/credits/icon",
+			"Tooltip": "Shows the credits left on your SnapDub account.",
+			"PropertyInspectorPath": "ui/credits.html",
+			"Controllers": [
+				"Keypad"
+			],
+			"States": [
+				{
+					"Image": "imgs/actions/credits/key",
+					"TitleAlignment": "bottom",
+					"FontSize": 12
+				}
+			]
+		}
+	],
+	"Category": "SnapDub",
+	"CategoryIcon": "imgs/plugin/category-icon",
+	"CodePath": "bin/plugin.js",
+	"Description": "Turn a stream or video link into short vertical clips with captions, with one key.",
+	"Icon": "imgs/plugin/marketplace",
+	"URL": "https://snapdub.ai",
+	"SDKVersion": 3,
+	"Software": {
+		"MinimumVersion": "7.1"
+	},
+	"OS": [
+		{
+			"Platform": "mac",
+			"MinimumVersion": "12"
+		},
+		{
+			"Platform": "windows",
+			"MinimumVersion": "10"
+		}
+	],
+	"Nodejs": {
+		"Version": "24",
+		"Debug": "disabled"
+	},
+	"UUID": "ai.snapdub.streamdeck"
+}

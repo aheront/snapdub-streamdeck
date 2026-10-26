@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+	<head lang="en">
+		<title>Credits</title>
+		<meta charset="utf-8" />
+		<script src="https://sdpi-components.dev/releases/v4/sdpi-components.js"></script>
+		<style>
+			/* Plain text outside the sdpi controls keeps the browser default black, unreadable on the dark panel. */
+			p, summary, details { color: #d8d8d8; }
+			summary { cursor: pointer; }
+		</style>
+	</head>
+	<body>
+		<sdpi-item label="Account">
+			<div>
+				<p id="signin-status">Checking...</p>
+				<button id="signin-button" class="sdpi-item-value">Sign in with SnapDub</button>
+			</div>
+		</sdpi-item>
+		<details class="sdpi-item">
+			<summary>How it works</summary>
+			<p>The key shows how many credits you have left and updates every few minutes. Press it to open your plan.</p>
+		</details>
+		<script src="signin.js"></script>
+	</body>
+</html>
